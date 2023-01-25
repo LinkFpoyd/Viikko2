@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Server Programming</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<div th:if="${ika} &gt; 17">
+	<h1 th:text="'Hei ' + ${nimi} + ' ' + ${ika} +' vuotta!'">Hello</h1>
+	</div>
+	<div th:if="${ika} &lt; 18">
+	<h1 th:text="'Olet liian nuori.'">Hello</h1>
+	</div>
+</body>
+</html>

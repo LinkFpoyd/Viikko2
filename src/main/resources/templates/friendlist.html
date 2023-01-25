@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Server Programming</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<h1>Ystävälistani</h1>
+	<div th:each="Kaveri : ${kaverit}">
+		<td th:text="${Kaveri.etunimi}"></td>
+		<td th:text="${Kaveri.sukunimi}"></td>
+	</div>
+	
+	<h2> Lisää ystävä listaan </h2>
+	
+	<form method="post">
+		<p>Etunimi: <input type="text" name="etunimi" /></p>
+		<p>Sukunimi: <input type="text" name="sukunimi" /></p>
+		<p><input type="submit" value="Submit" /></p>
+	</form>
+</body>
+</html>
